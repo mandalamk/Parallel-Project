@@ -22,7 +22,7 @@ public class AccountServiceImpl implements AccountService {
 	private void check(int amount) throws AccountException {
 
 		if (amount < 0)
-			throw new MyException("This transaction is Not Possible.");
+			throw new AccountException("This transaction is Not Possible.");
 
 	}
 
