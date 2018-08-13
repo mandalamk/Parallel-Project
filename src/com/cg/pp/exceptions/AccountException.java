@@ -1,33 +1,33 @@
 package com.cg.pp.exceptions;
 
-public class MyException extends Exception{
+public class AccountException extends Exception{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public MyException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+	public AccuntException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MyException(String message, Throwable cause) {
+	public AccountException(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MyException(String message) {
+	public AccountException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MyException(Throwable cause) {
+	public AccountException(Throwable cause) {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MyException() {
+	public AccountException() {
 		// TODO Auto-generated constructor stub
 	}
 
