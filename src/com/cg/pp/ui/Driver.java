@@ -9,7 +9,7 @@ package com.cg.pp.ui;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import com.cg.pp.exceptions.MyException;
+import com.cg.pp.exceptions.AccountException;
 import com.cg.pp.services.AccountServiceImpl;
 
 public class Driver {
@@ -83,7 +83,7 @@ public class Driver {
 
 					try {
 						impl.transfer(accFrom, accTo, amount);
-					} catch (MyException e) {
+					} catch (AccountException e) {
 						// TODO Auto-generated catch block
 						System.out.println(e.getMessage());
 					}
@@ -120,7 +120,7 @@ public class Driver {
 					
 					try {
 						impl.deposit(accNum, amount);
-					} catch (MyException e) {
+					} catch (AccountException e) {
 						// TODO Auto-generated catch block
 						System.out.println(e.getMessage());
 					}
@@ -155,7 +155,7 @@ public class Driver {
 					}
 					try {
 						impl.withdraw(accNum, amount);
-					} catch (MyException e) {
+					} catch (AccountException e) {
 						// TODO Auto-generated catch block
 						System.out.println(e.getMessage());
 					}
@@ -183,7 +183,7 @@ public class Driver {
 
 					try {
 						bal = impl.showBalance(accNum);
-					} catch (MyException e) {
+					} catch (AccountException e) {
 						// TODO Auto-generated catch block
 						System.out.println(e.getMessage());
 					}
@@ -202,7 +202,7 @@ public class Driver {
 					}
 					try {
 						impl.printTransactions(accNum);
-					} catch (MyException e) {
+					} catch (AccountException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
