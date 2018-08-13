@@ -2,7 +2,7 @@ package com.cg.pp.services;
 
 import java.util.ArrayList;
 
-import com.cg.pp.exceptions.MyException;
+import com.cg.pp.exceptions.AccountException;
 
 public interface AccountService {
 
