@@ -7,7 +7,7 @@ public class AccountException extends Exception{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public AccuntException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+	public AccountException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 		// TODO Auto-generated constructor stub
 	}
